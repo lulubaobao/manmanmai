@@ -1,0 +1,91 @@
+.nav {
+  position: relative;
+  width: 100%;
+  height: 38px;
+  background-image: linear-gradient(to bottom, #fff, #f1f1f1);
+  border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+  line-height: 38px;
+  padding-right: 70px;
+}
+.nav div {
+  padding-left: 10px;
+  width: 100%;
+}
+.nav input {
+  width: 70px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 30px;
+  margin-top: 4px;
+  margin-right: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.product-list ul li {
+  position: relative;
+  height: 118px;
+  padding-left: 100px;
+  border-bottom: 1px solid #efefef;
+}
+.product-list ul li a .pic {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+  display: block;
+  border: 1px solid #000;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.product-list ul li a .info {
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 100%;
+}
+.product-list ul li a .info .tit {
+  font-size: 14px;
+  height: 44px;
+  color: #333333;
+}
+.product-list ul li a .info .price {
+  color: red;
+  height: 24px;
+  font-size: 18px;
+}
+.product-list ul li a .info .other {
+  color: #a1a1a1;
+  font-size: 12px;
+}
+.page {
+  height: 36px;
+  margin-top: 10px;
+}
+.page .w33 {
+  width: 33.33%;
+  text-align: center;
+}
+.page .w33 a {
+  text-align: center;
+  width: 82px;
+  height: 33px;
+  display: inline-block;
+  border: 1px solid #000;
+  line-height: 33px;
+  background-color: #d4d4d4;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.page .w33 select {
+  text-align: center;
+  width: 82px;
+  height: 33px;
+  display: inline-block;
+  border: 1px solid #000;
+  line-height: 33px;
+  background-color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+}

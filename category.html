@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/category.css">
+</head>
+<body>
+<!--头部-->
+<header id="header" class="header">
+    <div class="logo fl">
+        <a href="index.html" title="慢慢买">
+            <img src="images/header_logo.png" alt="">
+        </a>
+    </div>
+    <div class="appdown fr">
+        <a href="javascript:;" title="手机端下载">
+            <img src="images/header_app.png" alt="">
+        </a>
+    </div>
+</header>
+<!--搜索-->
+<section id="form-search">
+    <input type="search" placeholder="请输入你想比价的商品" class="sea fl">
+    <input type="button" value="搜索" class="btn fr">
+</section>
+<section>
+    <div class="line "></div>
+</section>
+<!--内容部分-->
+<section>
+    <div class="cate">
+        <ul class="category">
+
+        </ul>
+    </div>
+
+</section>
+<!--底部-->
+<footer>
+    <div class="foot">
+        <a href="#" class="fl">登录</a>
+        <a href="#" class="fl">注册</a>
+        <a href="#top" class="fl">
+            <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">
+            返回顶部
+        </a>
+    </div>
+    <div class="foo">
+        <p>
+            <a href="#" style="color:red;">手机APP下载</a>
+            <a href="#" >慢慢买手机版</a>
+            --掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</footer>
+
+<script type="text/template" id="tmp">
+    {{each result as v i}}
+    <li class="lulu">
+        <a href="javascript:void(0)"
+           data-title-id="{{v.titleId}}"
+           style="background-image:url(http://www.zuyushop.com/wap/images/arrow1.gif);">{{v.title}}</a>
+        <ul class="category-content hide"></ul>
+    </li>
+
+    {{/each}}
+
+
+</script>
+
+
+
+<script type="text/template" id="categorytmp">
+
+    {{each result as v i}}
+    <li>
+        <a href="productlist.html?categoryid={{v.categoryId}}&amp;category={{v.category}}&amp;pageid={{v.categoryId}}" data-category-id="{{v.categoryId}}">{{v.category}}</a>
+    </li>
+    {{/each }}
+</script>
+<script src="js/template.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/tools.js"></script>
+<script src="js/category.js"></script>
+</body>
+</html>

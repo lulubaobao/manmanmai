@@ -1,0 +1,62 @@
+[0627/144820.789:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0627/144820.790:ERROR:exception_snapshot_win.cc(87)] thread ID 19700 not found in process
+[0627/144820.790:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0627/144820.802:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: 已尝试访问正在退出的过程。  (0xc000010a)
+[0627/163605.404:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0627/163605.406:ERROR:exception_snapshot_win.cc(87)] thread ID 22076 not found in process
+[0627/163605.406:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0627/215011.239:ERROR:process_reader_win.cc(233)] ReadMemory at 0x4cf6000 of 40960 bytes failed: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
+[0627/215011.280:ERROR:crash_report_exception_handler.cc(111)] WriteEverything failed
+[0627/215011.283:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: 已尝试访问正在退出的过程。  (0xc000010a)
+[0628/195128.432:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0628/195128.451:ERROR:exception_snapshot_win.cc(87)] thread ID 46748 not found in process
+[0628/195128.451:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0628/195128.451:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: 已尝试访问正在退出的过程。  (0xc000010a)
+[0628/201131.415:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0628/201131.416:ERROR:exception_snapshot_win.cc(87)] thread ID 48696 not found in process
+[0628/201131.416:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0628/212417.222:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0628/212417.222:ERROR:exception_snapshot_win.cc(87)] thread ID 50156 not found in process
+[0628/212417.222:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0628/212417.222:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: 已尝试访问正在退出的过程。  (0xc000010a)
+[0628/225750.074:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0628/225750.075:ERROR:exception_snapshot_win.cc(87)] thread ID 47464 not found in process
+[0628/225750.075:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0628/225750.075:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: 已尝试访问正在退出的过程。  (0xc000010a)
+[0629/092027.607:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0629/092027.637:ERROR:exception_snapshot_win.cc(87)] thread ID 48596 not found in process
+[0629/092027.637:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0629/092027.638:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: 已尝试访问正在退出的过程。  (0xc000010a)
+[0629/150501.177:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0629/150501.178:ERROR:exception_snapshot_win.cc(87)] thread ID 54188 not found in process
+[0629/150501.178:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0629/150501.245:ERROR:process_reader_win.cc(233)] ReadMemory at 0x756000 of 40960 bytes failed: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
+[0629/150501.245:ERROR:crash_report_exception_handler.cc(111)] WriteEverything failed
+[0629/150501.247:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: 已尝试访问正在退出的过程。  (0xc000010a)
+[0629/153829.352:ERROR:process_reader_win.cc(233)] ReadMemory at 0x4f6000 of 40960 bytes failed: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
+[0629/153829.353:ERROR:crash_report_exception_handler.cc(111)] WriteEverything failed
+[0629/153829.363:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: 已尝试访问正在退出的过程。  (0xc000010a)
+[0629/221232.119:ERROR:process_reader_win.cc(99)] process 47116 not found
+[0629/221232.120:ERROR:exception_snapshot_win.cc(87)] thread ID 22236 not found in process
+[0629/221232.120:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0629/221232.121:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: 已尝试访问正在退出的过程。  (0xc000010a)
+[0629/224034.030:ERROR:process_reader_win.cc(233)] ReadMemory at 0xcf5000 of 45056 bytes failed: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
+[0629/224034.033:ERROR:crash_report_exception_handler.cc(111)] WriteEverything failed
+[0629/224034.035:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: 已尝试访问正在退出的过程。  (0xc000010a)
+[0630/090234.433:ERROR:process_reader_win.cc(99)] process 51840 not found
+[0630/090234.456:ERROR:exception_snapshot_win.cc(87)] thread ID 54164 not found in process
+[0630/090234.456:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0630/090234.456:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: 已尝试访问正在退出的过程。  (0xc000010a)
+[0630/101119.355:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0630/101119.356:ERROR:exception_snapshot_win.cc(87)] thread ID 53288 not found in process
+[0630/101119.356:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed
+[0630/101119.356:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: 已尝试访问正在退出的过程。  (0xc000010a)
+[0630/115140.800:ERROR:process_reader_win.cc(233)] ReadMemory at 0x5f540000 of 64 bytes failed: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
+[0630/115140.801:WARNING:pe_image_reader.cc(281)] could not read dos header from C:\Program Files (x86)\Google\Chrome\Application\56.0.2924.87\chrome_child.dll
+[0630/115140.878:ERROR:process_reader_win.cc(233)] ReadMemory at 0xaf5000 of 45056 bytes failed: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
+[0630/115140.878:ERROR:crash_report_exception_handler.cc(111)] WriteEverything failed
+[0630/115140.880:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: 已尝试访问正在退出的过程。  (0xc000010a)
+[0630/232414.277:ERROR:process_reader_win.cc(142)] SuspendThread: 拒绝访问。 (0x5)
+[0630/232414.356:ERROR:process_reader_win.cc(233)] ReadMemory at 0xf56000 of 40960 bytes failed: 仅完成部分的 ReadProcessMemory 或 WriteProcessMemory 请求。 (0x12B)
+[0630/232414.356:ERROR:crash_report_exception_handler.cc(111)] WriteEverything failed
+[0630/232414.358:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: 已尝试访问正在退出的过程。  (0xc000010a)

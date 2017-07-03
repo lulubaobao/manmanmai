@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/gsproduct.css">
+</head>
+<body>
+<!--头部-->
+<header>
+    <div class="head">
+        <div class="back fl">
+            <a href="moneyctrl.html" class="icon-back "
+               style="color:#fff"></a>
+        </div>
+        <h2 class="fl">凑单品</h2>
+        <div class="home fr">
+            <a href="javascript:;" class="icon-app">
+            </a>
+        </div>
+    </div>
+</header>
+<!--内容部分-->
+<main class="gs-product">
+    <div class="list">
+        <!--导航部分-->
+        <div class="hd">
+            <!--导航-->
+            <div class="filter">
+                <ul>
+                    <li class="on">
+                        <a href="javascript:;"
+                           data-id="0" class="shop">
+                            京东
+                            <i></i>
+                        </a>
+                    </li>
+                    <li class="on">
+                        <a href="javascript:;"
+                           data-id="0" class="shop">
+                            华北
+                            <i></i>
+                        </a>
+                    </li>
+                    <li class="on">
+                        <a href="javascript:;"
+                           data-id="0" class="shop">
+                            全部价格
+                            <i></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--搜索框-->
+            <div class="seach">
+                <i class="icon-search"></i>
+            </div>
+            <!--隐藏部分-->
+            <!--店铺的部分-->
+            <div class="popsort popbox on hide" id="shop">
+                <ul>
+
+                </ul>
+            </div>
+            <!--地区的部分-->
+            <div class="popcat popbox hide" id="area">
+                <ul>
+
+                </ul>
+            </div>
+            <!--价格的部分-->
+            <div class="popprice popbox hide" id="price">
+                <ul>
+                    <li class="on">
+                        <a href="javascript:GetRequest('areaMoney', 0);">全部价格</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--内容部分-->
+        <div class="bd gs-product-list">
+            <ul id="container" class="masonry"
+                style="position: relative;height: 0px;">
+
+            </ul>
+        </div>
+    </div>
+</main>
+<!--底部-->
+<footer>
+    <div class="foot">
+        <a href="#" class="fl">登录</a>
+        <a href="#" class="fl">注册</a>
+        <a href="#top" class="fl">
+            <img src="http://www.zuyushop.com/wap/images/top.jpg"
+                 width="15" height="15">
+            返回顶部
+        </a>
+    </div>
+    <div class="foo">
+        <p>
+            <a href="#" style="color:red;">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>
+            --掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</footer>
+<!--渲染店铺-->
+<script type="text/template" id="getgsshop">
+    {{each result as v i}}
+    <li class>
+        <a href="#;"
+           data-shopid="{{v.shopId}}">{{v.shopName}}</a>
+    </li>
+    {{/each}}
+</script>
+<!--渲染地区-->
+<script type="text/template" id="getgsshoparea">
+    {{each result as v i}}
+    <li class>
+        <a href="#"
+           data-areaid="{{v.areaId}}">{{v.areaName}}</a>
+    </li>
+    {{/each}}
+</script>
+<!--内容渲染-->
+<script type="text/template" id="getgsproduct">
+    {{each result as v i}}
+    <li>
+        <a href="http://item.m.jd.com/ware/view.action?wareId=1274360" class="item border-img">
+            <div class="pic">
+                <img
+                        src="{{v.productImg}}">
+            </div>
+            <div class="title">{{v.productName}}</div>
+            <div class="other">
+                <div class="price">{{v.productPrice}}</div>
+                <div class="btn">去凑单</div>
+                <div class="clearfix"></div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script src="js/template.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/gsproduct.js"></script>
+</body>
+</html>

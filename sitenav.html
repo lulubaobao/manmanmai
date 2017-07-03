@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/sitenav.css">
+</head>
+<body>
+<!--头部-->
+<header>
+    <div class="head">
+        <div class="back fl">
+            <a href="index.html" class="icon-back " style="color:#fff"></a>
+        </div>
+        <h2 class="fl">商城导航</h2>
+        <div class="home fr">
+            <a href="javascript:;" class="icon-app">
+            </a>
+        </div>
+    </div>
+</header>
+<!--内容部分-->
+<main class="site-nav">
+    <div class="link clearfix">
+
+    </div>
+
+</main>
+<!--底部-->
+<footer>
+    <div class="foot">
+        <a href="#" class="fl">登录</a>
+        <a href="#" class="fl">注册</a>
+        <a href="#top" class="fl">
+            <img src="http://www.zuyushop.com/wap/images/top.jpg"
+                 width="15" height="15">
+            返回顶部
+        </a>
+    </div>
+    <div class="foo">
+        <p>
+            <a href="#" style="color:red;">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>
+            --掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</footer>
+<!--渲染页面-->
+<script type="text/template" id="getsitenav">
+    {{each result as v i}}
+    <a href="{{v.navHref}}" target="_blank">
+        <img src="{{v.navImg}}" alt="">{{v.navTitle}}
+    </a>
+    {{/each}}
+</script>
+<script src="js/template.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/sitenav.js"></script>
+</body>
+</html>

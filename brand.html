@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/brand.css">
+</head>
+<body>
+<!--头部-->
+<header id="header" class="header">
+    <div class="logo fl">
+        <a href="index.html" title="慢慢买">
+            <img src="images/header_logo.png" alt="">
+        </a>
+    </div>
+    <div class="appdown fr">
+        <a href="javascript:;" title="手机端下载">
+            <img src="images/header_app.png" alt="">
+        </a>
+    </div>
+</header>
+<!--搜索-->
+<section id="form-search">
+    <input type="search" placeholder="请输入你想比价的商品"
+           class="sea fl">
+    <input type="button" value="搜索" class="btn fr">
+</section>
+<section>
+    <div class="line "></div>
+</section>
+<!--内容部分-->
+<section id="category">
+    <!--导航部分-->
+    <nav class="product-list-title">
+        <a href="index.html">首页</a>>
+        <a href="brandTitle.html">全部分类</a>>
+    </nav>
+    <!--那个牌子好-->
+    <div style="font-size: 16px;color:#874604;height: 40px; padding-left:10px; line-height: 40px;margin:10px 5px; border:1px solid #ccc; background-color:#eee;">
+        平板电视哪个牌子好
+    </div>
+    <div class="row">
+        <ul>
+
+        </ul>
+    </div>
+
+    <!--销量排行-->
+    <div style="font-size: 16px;color:#874604;height: 40px; padding-left:10px; line-height: 40px;margin:10px 5px; border:1px solid #ccc; background-color:#eee;">
+        平板电视销量排行
+    </div>
+    <div class="product-list">
+        <ul>
+
+        </ul>
+    </div>
+    <!--最新评论-->
+    <div style="font-size: 16px;color:#874604;height: 40px; padding-left:10px; line-height: 40px;margin:10px 5px; border:1px solid #ccc; background-color:#eee;">
+        平板电视最新评论
+    </div>
+    <div class="bd pllist product-com">
+        <ul>
+
+        </ul>
+    </div>
+
+    <!--底部-->
+    <footer>
+        <div class="foot">
+            <a href="#" class="fl">登录</a>
+            <a href="#" class="fl">注册</a>
+            <a href="#top" class="fl">
+                <img src="http://www.zuyushop.com/wap/images/top.jpg"
+                     width="15" height="15">
+                返回顶部
+            </a>
+        </div>
+        <div class="foo">
+            <p>
+                <a href="#" style="color:red;">手机APP下载</a>
+                <a href="#">慢慢买手机版</a>
+                --掌上比价平台
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </footer>
+    <!--渲染品牌-->
+    <script type="text/template" id="getbrand">
+        {{each result as v i}}
+        <li>
+            <a href="productlist.html?categoryid={{v.categoryId}}&amp;pageid={{v.brandTitleId}}"
+               title="{{v.brandName}}">
+                <em class="top{{i+1}} fl ">{{i+1}}</em>
+                <div class="inner fl">
+                    <div class="tit">{{v.brandName}}</div>
+                    <p>{{v.brandInfo}}</p></div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <!--渲染销量-->
+    <script type="text/template" id="getbrandproductlist">
+        {{each result as v i}}
+        <li>
+            <a href="bijia.html?productid={{v.productId}}"
+               title="{{v.productName}}">
+                <div class="pic">
+                   {{#v.productImg}}
+                </div>
+                <div class="info">
+                    <div class="tit">{{v.productName}}
+                    </div>
+                    <div class="price"><em>{{v.productPrice}}</em>
+                        <span class="star"><em
+                                class="star5"></em></span>
+                    </div>
+                    <div class="other">
+                        <em>{{v.productQuote}}</em><em>{{v.productCom}}</em>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <!--渲染评论-->
+    <script type="text/template" id="getproductcom">
+        {{each result as v i}}
+        <li>
+            <a href="bijia.aspx?id=211698">
+                <div class="protit">
+                    <div class="pic">
+                        {{#v.productImg}}
+                    </div>
+                    <div class="tit">{{v.productName
+                        }}
+                    </div>
+                </div>
+                <div class="plbox">
+                    <div class="name">{{v.comName}}
+                        <span class="star">
+                                <em class="star5"></em>
+                            </span>
+                        <i>{{v.comTime}}</i>
+                    </div>
+                    <div class="con">
+                        {{v.comContent}}
+                        评论发布自{{v.comFrom}}
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <script src="js/template.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/brand.js"></script>
+</body>
+</html>

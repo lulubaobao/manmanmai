@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/couponproduct.css">
+</head>
+<body>
+<!--头部-->
+<header>
+    <div class="head">
+        <div class="back fl">
+            <a href="coupon.html" class="icon-back "
+               style="color:#fff"></a>
+        </div>
+        <h2 class="fl">优惠券</h2>
+        <div class="home fr">
+            <a href="javascript:;" class="icon-app">
+            </a>
+        </div>
+    </div>
+</header>
+<!--内容部分-->
+<main class="">
+    <div style="font-size:12px; text-align:center; color:#999; margin:8px 0px;">
+        --点餐前出示手机中的优惠券，即可享受优惠--
+    </div>
+    <div class="coupon-list">
+        <ul class="clearfix">
+
+
+        </ul>
+    </div>
+</main>
+
+<!--底部-->
+<footer>
+    <div class="foot">
+        <a href="#" class="fl">登录</a>
+        <a href="#" class="fl">注册</a>
+        <a href="#top" class="fl">
+            <img src="http://www.zuyushop.com/wap/images/top.jpg"
+                 width="15" height="15">
+            返回顶部
+        </a>
+    </div>
+    <div class="foo">
+        <p>
+            <a href="#" style="color:red;">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>
+            --掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</footer>
+<!--渲染页面-->
+<script type="text/template" id="getcouponproduct">
+    {{each result as v i}}
+    <li>
+        <a href="http://d3.5ikfc.com/static/thumbs/1016/kfc-5ikfc-108_pc27.jpg"
+           title=" 两人小食组 新奥尔良烤翅2块+薯条(中)+黄金鸡块5块+劲爆鸡米花(小) 2016年10月凭肯德基优惠券">
+            <div class="pic">{{#v.couponProductImg}}
+            </div>
+            <div class="info">
+                <div class="tit">
+                    <h3>{{v.couponProductName}}</h3>
+                    <h2>{{v.couponProductPrice}}</h2></div>
+                <div class="time">{{v.couponProductTime}}</div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script src="js/template.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/couponproduct.js"></script>
+</body>
+</html>

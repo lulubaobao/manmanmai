@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/moneyproduct.css">
+</head>
+<body>
+<!--头部-->
+<header>
+    <div class="head">
+        <div class="back fl">
+            <a href="inlanddiscount.html" class="icon-back " style="color:#fff"></a>
+        </div>
+        <h2 class="fl">国内折扣</h2>
+        <div class="home fr">
+            <a href="javascript:;" class="icon-app">
+            </a>
+        </div>
+    </div>
+</header>
+<!--内容部分-->
+<section>
+    <div class="container">
+
+    </div>
+</section>
+<!--底部-->
+<footer>
+    <div class="foot">
+        <a href="#" class="fl">登录</a>
+        <a href="#" class="fl">注册</a>
+        <a href="#top" class="fl">
+            <img src="http://www.zuyushop.com/wap/images/top.jpg"
+                 width="15" height="15">
+            返回顶部
+        </a>
+    </div>
+    <div class="foo">
+        <p>
+            <a href="#" style="color:red;">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>
+            --掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</footer>
+<!--渲染页面-->
+<script type="text/template" id="tmp">
+    {{each result as v i}}
+    <div class="cu-content">
+        <h3 class="title">{{v.productName}}</h3>
+        <h4></h4>
+        <div class="info">
+            <span class="mall">{{v.productFrom}}</span>
+            <span class="addtime"
+                  style="margin-right: 4px;">{{v.productTime}}</span>
+            <span class="author">{{v.productTips}}</span>
+        </div>
+        <div class="content clearfix">
+            <div class="picwrap">
+                <img src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&amp;imgurl=j_sources/img/2016/10/24/190_190_0_36618798b6e1a98d9f4ae8f7a195f41b.jpg" alt="新低价：MTG Style 系列 中性 Body Make Seat Style 脊椎护腰坐垫"></div>
+            <div class="conn">
+                <!--内容开始-->
+                <p>{{v.productInfo}}</p>
+                <p>{{#v.productImg}}</p>
+                <!--<p>{{#v.productInfo1}}</p>-->
+                <!--<p>{{#v.productInfo3}}</p>-->
+                <!--<p>{{#v.productImg2}}</p>-->
+                <!--<p>{{#v.productImg3}}</p>-->
+                <!--内容结束-->
+            </div>
+        </div>
+        <center>
+            <div class="area"><span class="s"><a
+                    href="javascript:;"
+                    style=" display:none;"><font
+                    id="fqy">广东</font><i
+                    class="iconfont">+</i>
+              			<div class="drop"
+                             style="display: block;">
+                			{{#v.productCity}}
+                    </div>
+                    </span><strong id="fqy_yh"
+                                   style=" display:none;">有货</strong>
+            </div>
+        </center>
+        <div class="golink">
+            <a href="redirect.aspx?tjid=521575&amp;y=cu_share"
+               target="_blank"><i
+                    class="icon-gobuy"></i>前往购买</a>
+        </div>
+    </div>
+    <div style="text-align: center; margin: 20px 10px;">
+        <img src="images/mmbweixin2.png" style="width: 100%; height: auto;">
+    </div>
+    <div class="cu-content-pl ui-border-t">
+        <div class="cu-content-pl ui-border-t">
+            {{#v.productComment}}
+        </div>
+    </div>
+    {{/each}}
+</script>
+<script src="js/template.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/discount.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <link rel="stylesheet" href="css/bijia.css">
+</head>
+<body>
+<!--头部-->
+<header id="header" class="header">
+    <div class="logo fl">
+        <a href="index.html" title="慢慢买">
+            <img src="images/header_logo.png" alt="">
+        </a>
+    </div>
+    <div class="appdown fr">
+        <a href="javascript:;" title="手机端下载">
+            <img src="images/header_app.png" alt="">
+        </a>
+    </div>
+</header>
+<!--搜索-->
+<section id="form-search">
+    <input type="search" placeholder="请输入你想比价的商品"
+           class="sea fl">
+    <input type="button" value="搜索" class="btn fr">
+</section>
+<section>
+    <div class="line "></div>
+</section>
+<!--内容模式-->
+<section class="bijia">
+    <!--导航-->
+    <div class="bj">
+        <div class="bijia-nav">
+            <div class="fl">
+                <a href="index.html">首页</a>>
+                <a href="#">电视</a>>
+                <a href="#">乐视TV(Letv)S50</a>
+            </div>
+            <input type="button" value="筛选" class="fr">
+        </div>
+        <!--产品模块-->
+        <div class="bijia-product">
+        </div>
+    </div>
+    <!--评论头部-->
+    <div class="com-title">
+        <div>网友评论</div>
+    </div>
+    <!--评论区域-->
+    <div class="com-list">
+        <ul>
+        </ul>
+    </div>
+    <!--查看更多内容-->
+    <div class="more"><a class="morein" href="javascript:;">查看更多评价</a>
+    </div>
+</section>
+
+<!--底部-->
+<footer>
+    <div class="foot">
+        <a href="#" class="fl">登录</a>
+        <a href="#" class="fl">注册</a>
+        <a href="#top" class="fl">
+            <img src="http://www.zuyushop.com/wap/images/top.jpg"
+                 width="15" height="15">
+            返回顶部
+        </a>
+    </div>
+    <div class="foo">
+        <p>
+            <a href="#" style="color:red;">手机APP下载</a>
+            <a href="#">慢慢买手机版</a>
+            --掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</footer>
+<!--渲染商品模块-->
+<script type="text/template" id="getproduct">
+    {{each result as v i}}
+    <div class="bijia-nav">
+        <div class="fl">
+            <a href="index.html">首页</a>>
+            <a href="#">{{v.productId}}</a>>
+            <a href="#">{{v.productName}}</a>
+        </div>
+        <input type="button" value="筛选" class="fr">
+    </div>
+    <div class="bijia-product">
+        <div class="product-name">{{v.productName}}</div>
+        <div class="product-img">
+            {{#v.productImg}}
+        </div>
+        <!--小导航-->
+        <div class="tab">
+            <ul>
+                <li class="cur">
+                    <a href="#">比价购买</a>
+                </li>
+                <li class="mtab">
+                    <a href="#">产品参数</a>
+                </li>
+                <li class="rtab">
+                    <a href="#">评价(2322)</a>
+                </li>
+            </ul>
+        </div>
+        <div class="plist">
+            <div class="plist-t">{{#v.bjShop}}
+            </div>
+            <div class="plist-b">
+                * 实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</script>
+
+<!--渲染评论区域-->
+<script type="text/template" id="getproductcom">
+    {{each result as v i}}
+    <li>
+        <div class="clearfix">
+                    <span
+                            class="fl com-name">{{v.comName}}</span>
+            <span
+                    class="fr com-time">{{v.comTime}}</span>
+        </div>
+        <div class="clearfix">
+                    <span
+                            class="star fl com-star">
+                        <em class="star5"></em>
+                    </span>
+            <span
+                    class="fr com-from">{{v.comFrom}}</span>
+        </div>
+        <div class="com-content">
+            {{v.comContent}}
+        </div>
+    </li>
+    {{/each}}
+</script>
+<script src="js/template.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bijia.js"></script>
+</body>
+</html>

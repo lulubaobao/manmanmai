@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<!--头部-->
+<header id="header" class="header">
+    <div class="logo fl">
+        <a href="index.html" title="慢慢买">
+            <img src="images/header_logo.png" alt="">
+        </a>
+    </div>
+    <div class="appdown fr">
+        <a href="javascript:;" title="手机端下载">
+            <img src="images/header_app.png" alt="">
+        </a>
+    </div>
+</header>
+<!--搜索-->
+<section id="form-search">
+    <input type="search" placeholder="请输入你想比价的商品" class="sea fl">
+    <input type="button" value="搜索" class="btn fr">
+</section>
+<section>
+    <div class="line "></div>
+</section>
+<!--分类-->
+<section class="search-big"></section>
+<!--渲染分类页面-->
+<script type="text/template" id="tmp">
+    {{each result as v i}}
+    <div class="search fl">
+        <a href="{{ v.titlehref }}">
+            {{#v.img}}
+        </a>
+        <a href="#">{{v.name}}</a>
+    </div>
+    {{/each}}
+</script>
+<!--折扣推荐-->
+<section>
+    <div class="line2"></div>
+    <div class="recom">
+        <span class="fl">超值折扣推荐</span>
+        <img src="http://www.zuyushop.com/wap/images/more.png" width="20" height="20" class="fr">
+    </div>
+</section >
+<!--商品模块-->
+<section class="sho">
+    <div class="sh">
+    <ul>
+        <li>
+            <a href="">
+                <div class="pic fl">
+                    <img src="http://cacheimg.manmanbuy.com/r_img/cacheimg.aspx?width=600&amp;imgurl=http://a.manmanbuy.com:8013/cuxiaoPic/201610/201610001412282758.jpg" alt="移动端凑单品：海天 鲜味 生抽 1.28L">
+                </div>
+                <div class="info fl">
+                    <div class="title">
+                        移动端凑单品：海天 鲜味 生抽 1.28L
+                        <span>10.9元</span>
+                    </div>
+                    <div class="other">
+                        <span class="mall fl">京东商城 | 10-25 14:10</span>
+                        <span class="commet fr">
+                            <i class="icon-commet"></i>
+                            1
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </li>
+    </ul>
+        <!--渲染折扣区域-->
+        <script type="text/template" id="tm">
+        {{each result as v i}}
+        <li>
+            <a href="moneyproduct.html?productid={{v.productId}}">
+                <div class="pic fl">
+                    {{#v.productImgSm}}
+                </div>
+                <div class="info fl">
+                    <div class="title">
+                       {{v.productName}}
+                        <span>{{v.productPinkage}}</span>
+                    </div>
+                    <div class="other">
+                        <span class="mall fl">{{v.productFrom}} | {{ v.productTime}}</span>
+                        <span class="commet fr">
+                            <i class="icon-commet"></i>
+                            {{v.productComCount}}
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+        {{/each}}
+        </script>
+        <div class="moreinfo">
+            <input type="button" value="更多优惠信息>>">
+        </div>
+    </div>
+</section>
+<!--品牌排行-->
+<section>
+    <div class="line2"></div>
+    <div class="sort">
+        <span class="fl">品牌排行</span>
+        <img src="http://www.zuyushop.com/wap/images/more.png"
+             width="20" height="20" class="fr">
+    </div>
+</section>
+<!--底部-->
+<footer>
+    <div class="foot">
+        <a href="#" class="fl">登录</a>
+        <a href="#" class="fl">注册</a>
+        <a href="#top" class="fl">
+            <img src="http://www.zuyushop.com/wap/images/top.jpg" width="15" height="15">
+            返回顶部
+        </a>
+    </div>
+    <div class="foo">
+        <p>
+            <a href="#" style="color:red;">手机APP下载</a>
+            <a href="#" >慢慢买手机版</a>
+            --掌上比价平台
+        </p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</footer>
+<script src="js/template.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/index.js"></script>
+</body>
+</html>
